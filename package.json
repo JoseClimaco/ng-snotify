@@ -1,10 +1,10 @@
 {
   "name": "ng-snotify-example",
   "description": "Angular 2+ notifications center",
-  "version": "9.0.2",
+  "version": "13.0.1",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve ng-snotify-example",
+    "start": "ng serve ng-snotify-example --port=4222",
     "lint": "npm run example:lint && npm run lib:lint",
     "test": "npm run example:test && npm run lib:test",
     "test:ci": "npm run example:test:ci && npm run lib:test:ci",
@@ -35,14 +35,14 @@
     "prepare": "npm run lib:build:prod",
     "postinstall": "webdriver-manager update --standalone false --gecko false"
   },
-  "homepage": "https://artemsky.github.io/ng-snotify",
+  "homepage": "https://github.com/JoseClimaco/ng-snotify",
   "repository": {
     "type": "git",
-    "url": "https://github.com/artemsky/ng-snotify"
+    "url": "https://github.com/JoseClimaco/ng-snotify"
   },
   "author": {
-    "name": "artemsky",
-    "email": "mr.artemsky@gmail.com"
+    "name": "JoseClimaco",
+    "email": "josepereira@me.com"
   },
   "keywords": [
     "angular",
@@ -60,6 +60,10 @@
     "Angular7",
     "Angular8",
     "Angular9",
+    "Angular10",
+    "Angular11",
+    "Angular12",
+    "Angular13",
     "ng",
     "ng2",
     "ng4",
@@ -68,6 +72,10 @@
     "ng7",
     "ng8",
     "ng9",
+    "ng10",
+    "ng11",
+    "ng12",
+    "ng13",
     "2",
     "4",
     "5",
@@ -75,6 +83,10 @@
     "7",
     "8",
     "9",
+    "10",
+    "11",
+    "12",
+    "13",
     "Library",
     "Notifications",
     "Notification",
@@ -102,34 +114,39 @@
     "angular7 notifications",
     "angular8 notifications",
     "angular9 notifications",
+    "angular10 notifications",
+    "angular11 notifications",
+    "angular12 notifications",
+    "angular13 notifications",
     "toaster"
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://artemsky.github.io/ng-snotify/issues"
+    "url": "https://github.com/JoseClimaco/ng-snotify/issues"
   },
   "dependencies": {
-    "@angular/animations": "~9.0.7",
-    "@angular/common": "~9.0.7",
-    "@angular/compiler": "~9.0.7",
-    "@angular/core": "~9.0.7",
-    "@angular/forms": "~9.0.7",
-    "@angular/platform-browser": "~9.0.7",
-    "@angular/platform-browser-dynamic": "~9.0.7",
-    "@angular/router": "~9.0.7",
+    "@angular/animations": "~13.2.0",
+    "@angular/common": "~13.2.0",
+    "@angular/compiler": "~13.2.0",
+    "@angular/core": "~13.2.0",
+    "@angular/forms": "~13.2.0",
+    "@angular/localize": "^13.2.0",
+    "@angular/platform-browser": "~13.2.0",
+    "@angular/platform-browser-dynamic": "~13.2.0",
+    "@angular/router": "~13.2.0",
     "@compodoc/compodoc": "^1.1.11",
     "bootstrap": "^3.3.7",
     "ng-snotify": "~9.0.1",
     "rxjs": "~6.5.4",
-    "tslib": "^1.10.0",
-    "zone.js": "~0.10.2"
+    "tslib": "^2.3.1",
+    "zone.js": "~0.11.4"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "~0.900.7",
-    "@angular-devkit/build-ng-packagr": "~0.900.7",
-    "@angular/cli": "~9.0.7",
-    "@angular/compiler-cli": "~9.0.7",
-    "@angular/language-service": "~9.0.7",
+    "@angular-devkit/build-angular": "~13.2.1",
+    "@angular-devkit/build-ng-packagr": "~0.1002.4",
+    "@angular/cli": "~13.2.1",
+    "@angular/compiler-cli": "~13.2.0",
+    "@angular/language-service": "~13.2.0",
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
     "@types/jasmine": "~3.5.10",
@@ -142,20 +159,20 @@
     "husky": "^4.2.3",
     "jasmine-core": "~3.5.0",
     "jasmine-spec-reporter": "~4.2.1",
-    "karma": "~4.4.1",
+    "karma": "~6.3.13",
     "karma-chrome-launcher": "~3.1.0",
     "karma-coverage-istanbul-reporter": "~2.1.1",
     "karma-jasmine": "~3.1.1",
     "karma-jasmine-html-reporter": "~1.5.2",
     "karma-junit-reporter": "~2.0.1",
     "lint-staged": "^10.0.9",
-    "ng-packagr": "^9.0.3",
+    "ng-packagr": "^13.2.1",
     "prettier": "^1.19.1",
-    "protractor": "~5.4.3",
+    "protractor": "~7.0.0",
     "puppeteer": "^2.1.1",
     "ts-node": "~7.0.0",
-    "tslint": "~5.15.0",
-    "typescript": "~3.7.5"
+    "tslint": "~6.1.3",
+    "typescript": "~4.5.5"
   },
   "engines": {
     "node": ">=10.13.0"
